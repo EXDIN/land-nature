@@ -1,7 +1,51 @@
 .section-one {
     background-image: url("../img/Img-1.jpg");
     background-repeat: no-repeat;
-    height: 120vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    padding: 50px;
+}
+
+.section-one > .text {
     position: relative;
-    top: -20vh;
+    color: white;
+    align-self: center;
+    max-width: 40%;
+    font-size: 60px;
+}
+
+.section-one > .svg-left {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 150px;
+    height: 150px;
+}
+
+@media (min-width: 1000px) {
+    .section-one > .svg-right {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 614px;
+        height: 493px;
+    }
+}
+
+
+.section-two {
+    background-color: white;
+    padding: 50px 0;
+}
+
+.section-two-content {
+    max-width: 900px;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }

@@ -10,13 +10,17 @@
     --header-height: 72px;
 }
 
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
     background-color: white;
 }
 
 
 .grid-container {
-    --flap: minmax(16px, 1fr);
+    --flap: minmax(30px, 1fr);
     --content: minmax(var(--min-width), var(--max-width));
 
     display: grid;

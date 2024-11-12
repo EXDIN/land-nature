@@ -1,5 +1,5 @@
 .page-header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 999;
@@ -25,7 +25,13 @@
     grid-column: 1 / 2;
 }
 
+.logo_white_st0 {
+    fill: #FFFFFF;
+    color: #FFFFFF;
+}
+
 .header-central {
+    grid-column: 2 / 3;
     align-self: center;
     justify-self: center;
     display: flex;
@@ -43,11 +49,15 @@
     scale: 1.2;
 }
 
+@media (max-width: 700px) {
+    .header-central-butt {
+        display: none;
+    }
+}
+
 
 .header-contact {
     grid-column: 3 / 4;
-    width: auto;
-    height: 35px;
     padding: 5px 15px;
     border: 1px solid silver;
     border-radius: 25px;

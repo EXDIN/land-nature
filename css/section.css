@@ -1,0 +1,7 @@
+.section-one {
+    background-image: url("../img/Img-1.jpg");
+    background-repeat: no-repeat;
+    height: 120vh;
+    position: relative;
+    top: -20vh;
+}

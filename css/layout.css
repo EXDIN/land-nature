@@ -10,6 +10,8 @@
     --header-height: 72px;
     --sections-padding: 50px;
     --sections-three-width: 450px;
+    --big-title-font: 35px;
+    --small-title-font: 25px;
 }
 
 html {

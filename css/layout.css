@@ -8,10 +8,12 @@
     --min-width: 320px;
     --max-width: 1440px;
     --header-height: 72px;
+    --sections-padding: 50px;
 }
 
 html {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-style: normal;
 }
 
 body {

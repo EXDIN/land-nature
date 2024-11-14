@@ -6,7 +6,7 @@
     background-position: center center;
     height: 100vh;
     display: flex;
-    padding: 50px;
+    padding: var(--sections-padding);
 }
 
 .section-one > .text {
@@ -20,7 +20,7 @@
 .section-one > .svg-left {
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -10px;
     width: 150px;
     height: 150px;
 }
@@ -38,7 +38,7 @@
 
 .section-two {
     background-color: white;
-    padding: 50px 0;
+    padding: var(--sections-padding) 0;
 }
 
 .section-two-content {
@@ -48,4 +48,70 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+
+.section-two-content > p {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.section-three {
+    background-color: rgb(250, 249, 248);
+    padding: var(--sections-padding) 0;
+}
+
+.section-three-all-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--sections-padding);
+    align-items: center;
+    justify-items: center;
+}
+
+.left-side {
+    grid-column: 1 / 2;
+}
+
+.right-side {
+    grid-column: 2 / 3;
+}
+
+
+.section-three-title {
+    font-size: 40px;
+    grid-column: 1 / -1;
+}
+
+.section-three-content-1 {
+    max-width: 450px;
+    grid-row: 2 / 3 ;
+}
+
+.section-three-content-1 > p {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.section-three-content-1 > h1 {
+    font-size: 30px;
+}
+
+.section-three-content-2 {
+    max-width: 450px;
+    justify-self: normal;
+}
+
+@media (max-width: 900px) {
+    .section-three-all-content {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .right-side {
+        grid-column: 1 / -1;
+    }
+
+    .section-three-content-1 { 
+        grid-row: auto;
+    }
 }

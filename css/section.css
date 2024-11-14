@@ -217,3 +217,29 @@
 .section-five-list-el > div > h3 {
     margin-bottom: 20px;
 }
+
+.section-six {
+    background-image: url("../img/img-2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 560px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+
+.section-six > svg {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+@media (max-width: 950px) {
+    .section-six {
+        height: 300px;
+    }
+    .section-six > svg {
+        width: 230px;
+    }
+}

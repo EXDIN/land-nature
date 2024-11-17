@@ -456,6 +456,7 @@
 .section-ten-button:hover {
     transition-duration: 1s;
     background-color: rgb(255, 245, 203);
+    cursor: pointer;
 }
 
 .section-ten-first-but {

@@ -29,7 +29,7 @@
     .section-one > .svg-right {
         position: absolute;
         right: 0;
-        bottom: 0;
+        bottom: -1px;
         width: 614px;
         height: 493px;
     }
@@ -299,5 +299,44 @@
 
     .section-seven-list-item-h {
         font-size: var(--small-title-font);
+    }
+}
+
+.section-eight {
+    background-image: url("../img/img-3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+
+.section-eight > svg {
+    position: relative;
+    height: calc(100% + 2px);
+    top: -1px;
+    transform: rotate(180deg);
+}
+
+.section-eight-title {
+    position: absolute;
+    width: 100%;
+    align-self: center;
+    text-align: center;
+    font-size: var(--big-title-font);
+    color: white;
+    z-index: 100;
+}
+
+@media (max-width: 950px) {
+    .section-eight {
+        height: 250px;
+    }
+
+    .section-eight-title {
+        font-size: var(--small-title-font);
+        text-shadow: 3px 4px 10px rgb(0 0 0 / 50%);
     }
 }

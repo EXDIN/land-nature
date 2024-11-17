@@ -240,13 +240,12 @@
         height: 300px;
     }
     .section-six > svg {
-        width: 230px;
+        width: 235px;
     }
 }
 
-
 .section-seven {
-    padding: var(--sections-padding);
+    padding: var(--sections-padding) 0;
 }
 
 .section-seven-all-content {
@@ -274,17 +273,23 @@
 }
 
 .section-seven-list-item-p {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 200;
 }
 
+@media (max-width: 1300px) {
+    .section-seven-all-content {
+        padding: 0 50px;
+    }
+}
+
 @media (max-width: 1000px) {
+    .section-seven-all-content {
+        padding: 0;
+    }
     .section-seven-list {
         grid-template-columns: 1fr;
         gap: 25px;
-    }
-    
-    .section-seven-list {
         margin-bottom: 25px;
     }
 
